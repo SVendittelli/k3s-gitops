@@ -2,7 +2,7 @@
     "name": "k3s-gitops",
     "version": "1.0.0",
     "private": true,
-    "description": "",
+    "description": "Flux2/Gitops managed k3s cluster running on raspberry pis",
     "homepage": "https://github.com/SVendittelli/k3s-gitops#readme",
     "repository": {
         "type": "git",
