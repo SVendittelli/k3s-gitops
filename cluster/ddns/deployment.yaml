@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ddclient-deployment
+  name: ddclient
   labels:
     app: ddclient
   namespace: ddns
@@ -24,7 +24,7 @@ spec:
       volumes:
         - name: ddclient-config-file
           secret:
-            secretName: ddclient-secret
+            secretName: ddclient
       containers:
         - name: ddclient
           image: linuxserver/ddclient:arm64v8-latest
