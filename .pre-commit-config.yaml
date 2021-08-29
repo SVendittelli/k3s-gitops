@@ -1,3 +1,7 @@
+ci:
+  autoupdate_commit_msg: 'chore(pre-commit): pre-commit autoupdate'
+  autofix_prs: false
+
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.0.1
