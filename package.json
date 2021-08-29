@@ -15,10 +15,12 @@
     },
     "config": {
         "commitizen": {
-            "path": "./node_modules/cz-conventional-changelog"
+            "path": "./node_modules/@commitlint/cz-commitlint"
         }
     },
     "devDependencies": {
-        "cz-conventional-changelog": "^3.3.0"
+        "@commitlint/config-conventional": "^13.1.0",
+        "@commitlint/cz-commitlint": "^13.1.0",
+        "commitizen": "^4.2.4"
     }
 }
