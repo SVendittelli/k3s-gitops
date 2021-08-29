@@ -1,0 +1,24 @@
+{
+    "name": "k3s-gitops",
+    "version": "1.0.0",
+    "private": true,
+    "description": "",
+    "homepage": "https://github.com/SVendittelli/k3s-gitops#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SVendittelli/k3s-gitops.git"
+    },
+    "license": "MIT",
+    "author": "Sam Vendittelli <sam.vendittelli@hotmail.com>",
+    "scripts": {
+        "cz": "cz"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
+    "devDependencies": {
+        "cz-conventional-changelog": "^3.3.0"
+    }
+}
