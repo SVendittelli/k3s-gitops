@@ -26,10 +26,16 @@ repos:
     rev: v1.26.3
     hooks:
       - id: yamllint
+        args:
+          - -c
+          - .github/lint/.yamllint.yaml
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.28.1
     hooks:
       - id: markdownlint
+        args:
+          - -c
+          - .github/lint/.markdownlint.yaml
   - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
     rev: v5.0.0
     hooks:
