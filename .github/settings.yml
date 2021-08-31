@@ -1,5 +1,5 @@
+---
 # These settings are synced to GitHub by https://probot.github.io/apps/settings/
-
 repository:
   # See https://docs.github.com/en/rest/reference/repos#update-a-repository for all available settings.
 
@@ -10,7 +10,7 @@ repository:
   description: Flux2/GitOps managed k3s cluster running on Raspberry Pis
 
   # A URL with more information about the repository
-  homepage: https://github.com/SVendittelli/k3s-gitops#readme
+  homepage: https://vendittelli.co.uk
 
   # A comma-separated list of topics to set on the repository
   topics: k3s, k3sup, flux, gitops, raspberry-pi
