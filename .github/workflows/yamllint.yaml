@@ -26,4 +26,6 @@ jobs:
         if: ${{ steps.filter.outputs.yaml == 'true' }}
         uses: reviewdog/action-yamllint@v1
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          reporter: github-pr-check
           yamllint_flags: "-c .github/lint/.yamllint.yaml ${{ steps.filter.outputs.yaml_files }}"
