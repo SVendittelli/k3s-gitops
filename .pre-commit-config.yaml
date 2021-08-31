@@ -1,5 +1,6 @@
+---
 ci:
-  autoupdate_commit_msg: 'chore(pre-commit): pre-commit autoupdate'
+  autoupdate_commit_msg: "chore(pre-commit): pre-commit autoupdate"
   autofix_prs: false
 
 repos:
@@ -21,6 +22,10 @@ repos:
     rev: v2.0.3
     hooks:
       - id: forbid-secrets
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.26.3
+    hooks:
+      - id: yamllint
   - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
     rev: v5.0.0
     hooks:

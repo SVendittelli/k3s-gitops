@@ -1,0 +1,10 @@
+---
+extends: default
+
+ignore: |
+  *.sops.*
+
+rules:
+  comments:
+    min-spaces-from-content: 1
+  line-length: disable
