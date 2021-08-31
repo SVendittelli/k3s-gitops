@@ -30,3 +30,27 @@ included for encrypting new secrets. Git diffs can be shown in plain text by
 ```sh
 sops --encrypt --in-place ./cluster/<SECRET_NAME>.sops.yaml
 ```
+
+## :dash: Kubernetes Dashboard
+
+The kubernetes dashboard is deployed via a [helm repo](https://artifacthub.io/packages/helm/k8s-dashboard/kubernetes-dashboard).
+
+The dashboard by:
+
+```sh
+kubectl proxy
+```
+
+The dashboard can then be accessed at <http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:https/proxy/>
+
+A login token can be obtained by:
+
+```sh
+kubectl -n kubernetes-dashboard describe secret admin-user-token | grep '^token'
+```
+
+### :ballot_box_with_check: Kubernetes Dashboard TODOs
+
+- [ ] Reduce user privilege
+- [ ] Investigate user access options
+- [ ] Configure ingress
