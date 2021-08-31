@@ -3,6 +3,7 @@ extends: default
 
 ignore: |
   *.sops.*
+  gotk-components.yaml
 
 rules:
   comments:
