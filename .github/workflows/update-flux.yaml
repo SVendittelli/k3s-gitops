@@ -17,10 +17,12 @@ jobs:
       - name: Check for updates
         id: update
         run: |
+          CLI_VERSION="$(flux -v)"
+          VERSION="v${CLI_VERSION#*flux version }"
+
           flux install \
             --export > ./cluster/flux-system/gotk-components.yaml
 
-          VERSION="$(flux -v)"
           echo "::set-output name=flux_version::$VERSION"
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
