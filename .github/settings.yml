@@ -80,20 +80,20 @@ branches:
 # Labels: define labels for Issues and Pull Requests
 labels:
   - name: bug
-    color: d73a4a
+    color: "d73a4a"
     description: Something isn't working
   - name: documentation
-    color: 0075ca
+    color: "0075ca"
     description: Improvements or additions to documentation
   - name: enhancement
-    color: a2eeef
+    color: "a2eeef"
     description: New feature
   - name: flux/update
-    color: e4e669
+    color: "e4e669"
     description: Automated flux version update
-  - name: renovate/image
-    color: 7057ff
-    description: Automated image version update
   - name: renovate/helm
-    color: 008672
+    color: "008672"
     description: Automated chart version update
+  - name: renovate/image
+    color: "7057ff"
+    description: Automated image version update
