@@ -7,6 +7,15 @@
 
 Configuration for my personal `k3s` cluster. Deployed and managed using [flux](https://fluxcd.io).
 
+## :ballot_box_with_check: To Do List
+
+- [ ] Host personal website
+- [ ] Add traefik dashboard
+- [ ] Serve aoeii redirector page
+- [ ] Host aoeii discord bot
+- [ ] Replace `cluster-admin` user with IDP and auth (`keycloak`)
+- [ ] Configure `cert-manager` for TLS on ingresses
+
 ## :warning: pre-commit
 
 It is advisable to install [pre-commit](https://pre-commit.com/) and the
@@ -48,9 +57,3 @@ A login token can be obtained by:
 ```sh
 kubectl -n kubernetes-dashboard describe secret admin-user-token | grep '^token'
 ```
-
-### :ballot_box_with_check: Kubernetes Dashboard TODOs
-
-- [ ] Reduce user privilege
-- [ ] Investigate user access options
-- [ ] Configure ingress
