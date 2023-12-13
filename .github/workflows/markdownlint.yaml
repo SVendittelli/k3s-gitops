@@ -22,7 +22,7 @@ jobs:
               - added|modified: "**.md"
       - name: Lint files
         if: ${{ steps.filter.outputs.markdown == 'true' }}
-        uses: reviewdog/action-markdownlint@v0.2
+        uses: reviewdog/action-markdownlint@v0.14
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-check
