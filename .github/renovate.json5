@@ -1,5 +1,6 @@
 {
   extends: ["config:base"],
+  enabled: false,
   kubernetes: {
     fileMatch: ["cluster/.+\\.ya?ml$"],
     ignorePaths: ["cluster/flux-system/"],
