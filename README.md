@@ -5,6 +5,8 @@
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen?logo=renovatebot&logoColor=white)](https://app.renovatebot.com/dashboard#github/SVendittelli/k3s-gitops)
 
+This project is no longer used or maintained.
+
 Configuration for my personal `k3s` cluster. Deployed and managed using [flux](https://fluxcd.io).
 
 ## :ballot_box_with_check: To Do List
